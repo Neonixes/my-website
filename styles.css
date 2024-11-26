@@ -1,0 +1,109 @@
+/* Общие стили */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #0078d4;
+    color: white;
+    padding: 10px 20px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.banner {
+    text-align: center;
+    background-color: #eef6fc;
+    padding: 40px 20px;
+}
+
+.banner button {
+    padding: 10px 20px;
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.banner button:hover {
+    background-color: #005a9e;
+}
+
+.categories, .gallery, .features {
+    padding: 20px;
+}
+
+.categories .grid, .gallery .grid, .features .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.categories .card, .features .feature {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.categories .card img, .gallery .grid img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header .logo img {
+    width: 80px;  /* Ширина логотипа */
+    height: 80px;  /* Пропорциональная высота */
+}
+
+/* Социальные иконки */
+.social-media {
+    position: relative; /* Заменяем fixed на relative, чтобы иконки двигались с прокруткой */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Дополнительный отступ снизу, если нужно */
+}
+
+.social-icon {
+    color: rgb(16, 122, 188);  /* Правильный способ указания цвета */
+    text-decoration: none;
+    font-size: 24px; /* Размер иконок */
+}
+
+.social-icon i {
+    font-size: 24px; /* Размер иконок */
+}
+
+.social-icon:hover {
+    color: #0078d4; /* Цвет иконки при наведении */
+}
