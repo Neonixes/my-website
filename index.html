@@ -3,12 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NeonixesSHOP</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Мир Идей</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Добро пожаловать на наш магазин</h1>
-    <p>Продажа электроники</p>
-    <script src="script.js"></script>
-</body>
-</html>
+    <!-- Шапка -->
+    <header>
+        <div class="container">
+            <div class="logo">ＮＥＯＮＳＨＯＰ</div>
+            <nav>
+                <a href="#banner">Главная</a>
+                <a href="#categories">Категории</a>
+                <a href="#features">О нас</a>
+                <a href="#gallery">Галерея</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Баннер -->
+    <section class="banner" id="banner">
+        <h1>Добро пожаловать в ＮＥＯＮＳＨＯＰ!</h1>
+        <p>Здесь вы найдёте всё, что нужно для вашего игрового удовольствия.</p>
+        <button onclick="showAlert()">Узнать больше</button>
+    </section>
+
+    <!-- Категории -->
+    <section class="categories" id="categories">
+        <h2>Популярные категории</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://ir-3.ozone.ru/s3/multimedia-5/wc1000/6529403513.jpg" alt="Коврики">
+                <h3>Коврики</h3>
+                <p>"Ваш курсор — в надежных руках!"</p>
+                <button onclick="showCategory('Коврики')">Подробнее</button>
+            </div>
+            <div class="card">
+                <img src="https://ir-3.ozone.ru/s3/multimedia-1-8/wc1000/6913123028.jpg" alt="Кронштейны">
+                <h3>Кронштейны</h3>
+                <p>"Поднимите комфорт на новый уровень!"</p>
+                <button onclick="showCategory('Кронштейны')">Подробнее</button>
+            </div>
+            <div class="card">
+                <img src="https://ir-3.ozone.ru/s3/multimedia-1-a/wc1000/7006546270.jpg" alt="Кейкапы">
+                <h3>Кейкапы</h3>
+                <p>"Каждая клавиша — стиль и удобство!"</p>
+                <button onclick="showCategory('Кейкапы')">Подробнее</button>
+            </div>
+            <div class="card">
+                <img src="https://ir-3.ozone.ru/s3/multimedia-1/wc1000/6544521313.jpg" alt="Игровое кресло">
+                <h3>Игровое кресло</h3>
+                <p>"Комфорт для победы в каждой игре!"</p>
+                <button onclick="showCategory('Игровое кресло')">Подробнее</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Галерея -->
+    <section class="gallery" id="gallery">
+        <h2>Галерея</h2>
+        <div class="grid">
+            <img src="https://ir-3.ozone.ru/s3/multimedia-1-x/wc1000/6926692173.jpg" alt="Изображение 1">
+            <img src="https://ir-3.ozone.ru/s3/multimedia-0/wc1000/6350655876.jpg" alt="Изображение 2">
+            <img src="https://ir-3.ozone.ru/s3/multimedia-9/wc1000/6055109097.jpg" alt="Изображение 3">
+            <img src="https://ir-3.ozone.ru/s3/multimedia-1-u/wc1000/7044464622.jpg" alt="Изображение 4">
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section class="features" id="features">
+        <h2>Почему выбирают нас?</h2>
+        <div class="grid">
+            <div class="feature">
+                <h3>Доступные цены</h3>
+                <p>Мы предоставляем высокое качество по разумной цене.</p>
+            </div>
+            <div class="feature">
+                <h3>Широкий ассортимент</h3>
+                <p>У нас вы найдёте всё что вы искали.</p>
+            </div>
+            <div class="feature">
+                <h3>Отличный сервис</h3>
+                <p>Мы всегда рады помочь и ответить на все ваши вопросы.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Шапка с логотипом -->
+    <header>
+        <div class="container">
+            <!-- Логотип -->
+            <div class="logo">
+                <img src="https://files.oaiusercontent.com/file-CVKhcKt4QUHqzpEjn18jQs?se=2024-11-26T13%3A41%3A47Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D4613c70e-e544-4459-af8b-337f2c5e9f18.webp&sig=T6s/wdraNubR4tCcNy5u0u3vb8LPSgxZXknJWCElKNI%3D" alt="Мир Идей" />
+            </div>
+            <nav>
+                <a href="#banner">Главная</a>
+                <a href="#categories">Категории</a>
+                <a href="#features">О нас</a>
+                <a href="#gallery">Галерея</a>
+            </nav>
+        </div>
+    </header>
+
+    <head>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+        <footer>
+            <div class="social-media">
+                <a href="https://facebook.com/yourprofile" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook-f"></i> Facebook
+                </a>
+                <a href="https://twitter.com/yourprofile" target="_blank" class="social-icon">
+                    <i class="fab fa-twitter"></i> Twitter
+                </a>
+                <a href="https://instagram.com/yourprofile" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+            </div>
+            <p>&copy; 2024 ＮＥＯＮＳＨＯＰ. Все права защищены.</p>
+        </footer>
+        
+        <script src="scripts.js"></script>
+        
