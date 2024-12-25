@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NeonSHOP</title>
     <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Шапка -->
     <header>
         <div class="container">
             <a href="/" class="logo">
-            <img src="logo.png" alt="NeonSHOP">
+                <img src="logo.png" alt="NeonSHOP">
             </a>
             <nav>
                 <a href="#banner">Главная</a>
@@ -37,40 +36,169 @@
                 <img src="https://ir-3.ozone.ru/s3/multimedia-5/wc1000/6529403513.jpg" alt="Коврики">
                 <h3>Коврики</h3>
                 <p>"Ваш курсор — в надежных руках!"</p>
-                <button onclick="showCategory('Коврики')">Подробнее</button>
+                <button onclick="addToCart('.')">Добавить в корзину</button>
             </div>
             <div class="card">
                 <img src="https://ir-3.ozone.ru/s3/multimedia-1-8/wc1000/6913123028.jpg" alt="Кронштейны">
                 <h3>Кронштейны</h3>
                 <p>"Поднимите комфорт на новый уровень!"</p>
-                <button onclick="showCategory('Кронштейны')">Подробнее</button>
+                <button onclick="addToCart('.')">Добавить в корзину</button>
             </div>
             <div class="card">
                 <img src="https://ir-3.ozone.ru/s3/multimedia-1-a/wc1000/7006546270.jpg" alt="Кейкапы">
                 <h3>Кейкапы</h3>
                 <p>"Каждая клавиша — стиль и удобство!"</p>
-                <button onclick="showCategory('Кейкапы')">Подробнее</button>
+                <button onclick="addToCart('.')">Добавить в корзину</button>
             </div>
             <div class="card">
                 <img src="https://ir-3.ozone.ru/s3/multimedia-1/wc1000/6544521313.jpg" alt="Игровое кресло">
                 <h3>Игровое кресло</h3>
                 <p>"Комфорт для победы в каждой игре!"</p>
-                <button onclick="showCategory('Игровое кресло')">Подробнее</button>
+                <button onclick="addToCart('.')">Добавить в корзину</button>
             </div>
         </div>
     </section>
 
-    <!-- Галерея -->
-    <section class="gallery" id="gallery">
-        <h2>Галерея</h2>
-        <div class="grid">
-            <img src="https://ir-3.ozone.ru/s3/multimedia-1-x/wc1000/6926692173.jpg" alt="Изображение 1">
-            <img src="https://ir-3.ozone.ru/s3/multimedia-0/wc1000/6350655876.jpg" alt="Изображение 2">
-            <img src="https://ir-3.ozone.ru/s3/multimedia-9/wc1000/6055109097.jpg" alt="Изображение 3">
-            <img src="https://ir-3.ozone.ru/s3/multimedia-1-u/wc1000/7044464622.jpg" alt="Изображение 4">
-        </div>
-    </section>
+    <script>
+        function addToCart(item) {
+            alert(item + " добавлен в корзину!");
+        }
+    </script>
 
+    <!-- Галерея -->
+
+<!-- Галерея -->
+<section class="gallery" id="gallery">
+    <h2>Галерея</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="https://ir-3.ozone.ru/s3/multimedia-1-x/wc1000/6926692173.jpg" alt="Изображение 1">
+            <h3>Игровая клавиатура</h3>
+            <p>"Каждое нажатие — шаг к победе!"</p>
+            <button onclick="addToCart('.')">Добавить в корзину</button>
+        </div>
+        <div class="card">
+            <img src="https://ir-3.ozone.ru/s3/multimedia-0/wc1000/6350655876.jpg" alt="Изображение 2">
+            <h3>Игровая мышь</h3>
+            <p>"Мгновенные отклики — ваша победа!"</p>
+            <button onclick="addToCart('.')">Добавить в корзину</button>
+        </div>
+        <div class="card">
+            <img src="https://ir-3.ozone.ru/s3/multimedia-9/wc1000/6055109097.jpg" alt="Изображение 3">
+            <h3>Игровые наушники</h3>
+            <p>"Слушай мир по-новому!"</p>
+            <button onclick="addToCart('.')">Добавить в корзину</button>
+        </div>
+        <div class="card">
+            <img src="https://ir-3.ozone.ru/s3/multimedia-1-u/wc1000/7044464622.jpg" alt="Изображение 4">
+            <h3>Игровой микрофон</h3>
+            <p>"Чистый звук, который слышат все!"</p>
+            <button onclick="addToCart('.')">Добавить в корзину</button>
+        </div>
+        <!-- Новые товары -->
+        <div class="card">
+            <img src="https://ir-3.ozone.ru/s3/multimedia-t/wc1000/6739543469.jpg" alt="Изображение 5">
+            <h3>Блок питания для ПК Deepcool PF700 80+</h3>
+            <p></p>
+            <button onclick="addToCart('.')">Добавить в корзину</button>
+        </div>
+        <div class="card">
+            <img src="https://ir-3.ozone.ru/s3/multimedia-1-f/wc1000/7119075651.jpg" alt="Изображение 6">
+            <h3>Набор для чистки гаджетов,</h3>
+            <p>"Чистота всегда и везде!"</p>
+            <button onclick="addToCart('.')">Добавить в корзину</button>
+        </div>
+        <div class="card">
+            <img src="https://ir-3.ozone.ru/s3/multimedia-p/wc1000/6731390977.jpg" alt="Изображение 7">
+            <h3>USB Hub / USB-концентратор USB 3.0 </h3>
+            <p></p>
+            <button onclick="addToCart('.')">Добавить в корзину</button>
+        </div>
+        <div class="card">
+            <img src="https://ir-3.ozone.ru/s3/multimedia-1-e/wc1000/7044491642.jpg" alt="Изображение 8">
+            <h3>Геймерский стол компьютерный, 140*71,6 см.</h3>
+            <p>"Комфорт для длительных сессий!"</p>
+            <button onclick="addToCart('.')">Добавить в корзину</button>
+        </div>
+        <div class="card">
+            <img src="https://ir-3.ozone.ru/s3/multimedia-0/wc1000/6797796336.jpg" alt="Изображение 9">
+            <h3>Термопаста, GD900-1 SSY1</h3>
+            <p></p>
+            <button onclick="addToCart('.')">Добавить в корзину</button>
+        </div>
+        <div class="card">
+        <img src="https://ir-3.ozone.ru/s3/multimedia-7/wc1000/6156484195.jpg" alt="Изображение 10">
+        <h3>Колонки для компьютера 2.0 SVEN SPS-585</h3>
+        <p></p>
+        <button onclick="addToCart('.)">Добавить в корзину</button>
+    </div>
+    <div class="card">
+        <img src="https://ir-3.ozone.ru/s3/multimedia-l/wc1000/6087747753.jpg" alt="Изображение 11">
+        <h3>ИБП Sven Pro 800</h3>
+        <p></p>
+        <button onclick="addToCart('.')">Добавить в корзину</button>
+    </div>
+    <div class="card">
+        <img src="https://ir-3.ozone.ru/s3/multimedia-1-1/wc1000/7186711393.jpg" alt="Изображение 12">
+        <h3>MSI Modern 15H Ноутбук 15.6</h3>
+        <p></p>
+        <button onclick="addToCart('.')">Добавить в корзину</button>
+    </div>
+    <div class="card">
+        <img src="https://ir-3.ozone.ru/s3/multimedia-3/wc1000/6832018659.jpg" alt="Изображение 13">
+        <h3>Аккумулятор BATTBEE BT 1207 12V 7Ah AGM VRLA для ИБП</h3>
+        <p></p>
+        <button onclick="addToCart('.')">Добавить в корзину</button>
+    </div>
+    <div class="card">
+        <img src="https://ir-3.ozone.ru/s3/multimedia-t/wc1000/6801432617.jpg" alt="Изображение 14">
+        <h3>Кулер для телефона игровой</h3>
+        <p></p>
+        <button onclick="addToCart('.')">Добавить в корзину</button>
+    </div>
+    <div class="card">
+        <img src="https://ir-3.ozone.ru/s3/multimedia-w/wc1000/6497556860.jpg" alt="Изображение 15">
+        <h3>16 ГБ USB Флеш-накопитель USB 2.0 Smartbuy Twist, черный</h3>
+        <p></p>
+        <button onclick="addToCart('.')">Добавить в корзину</button>
+    </div>
+    <div class="card">
+        <img src="https://ir-3.ozone.ru/s3/multimedia-w/wc1000/6787329512.jpg" alt="Изображение 16">
+        <h3>Разветвитель вентиляторов 4 pin</h3>
+        <p></p>
+        <button onclick="addToCart('.')">Добавить в корзину</button>
+    </div>
+    <div class="card">
+        <img src="https://ir-3.ozone.ru/s3/multimedia-s/wc1000/6604791472.jpg" alt="Изображение 17">
+        <h3>Роутер беспроводной Digma DWR-N301 черный</h3>
+        <p></p>
+        <button onclick="addToCart('.')">Добавить в корзину</button>
+    </div>
+    <div class="card">
+        <img src="https://ir-3.ozone.ru/s3/multimedia-1-r/wc1000/7118265051.jpg" alt="Изображение 18">
+        <h3>Держатель игрового ПК CPB-21R с RGB-подсветкой</h3>
+        <p></p>
+        <button onclick="addToCart('.')">Добавить в корзину</button>
+    </div>
+    <div class="card">
+        <img src="https://ir-3.ozone.ru/s3/multimedia-1-3/wc1000/7106421855.jpg" alt="Изображение 19">
+        <h3>Наклейка Spider-Man для Sony PlayStation 3 Super Slim полный комплект геймпады</h3>
+        <p>""</p>
+        <button onclick="addToCart('.')">Добавить в корзину</button>
+    </div>
+    <div class="card">
+        <img src="https://ir-3.ozone.ru/s3/multimedia-1-z/wc1000/6920301743.jpg" alt="Изображение 20">
+        <h3>Чехол для MacBook Pro 14" (2021-2023) темно-синий</h3>
+        <p></p>
+        <button onclick="addToCart('.')">Добавить в корзину</button>
+    </div>
+    <div class="card">
+        <img src="https://ir-3.ozone.ru/s3/multimedia-1-l/wc1000/7215609261.jpg" alt="Изображение 21">
+        <h3>Кулер для процессоров AMD и Intel COOLEX</h3>
+        <p></p>
+        <button onclick="addToCart('.')">Добавить в корзину</button>
+    </div>
+</section>
     <!-- Преимущества -->
     <section class="features" id="features">
         <h2>Почему выбирают нас?</h2>
@@ -81,7 +209,7 @@
             </div>
             <div class="feature">
                 <h3>Широкий ассортимент</h3>
-                <p>У нас вы найдёте всё что вы искали.</p>
+                <p>У нас вы найдёте всё для вашего удовольствия.</p>
             </div>
             <div class="feature">
                 <h3>Отличный сервис</h3>
@@ -89,38 +217,31 @@
             </div>
         </div>
     </section>
-    <!-- Шапка с логотипом -->
-    <header>
-        <div class="container">
-            
-            </div>
-            <nav>
-                <a href="#banner">Главная</a>
-                <a href="#categories">Категории</a>
-                <a href="#features">О нас</a>
-                <a href="#gallery">Галерея</a>
-            </nav>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="social-media">
+            <a href="https://facebook.com/yourprofile" target="_blank" class="social-icon">
+                <i class="fab fa-facebook-f"></i> Facebook
+            </a>
+            <a href="https://twitter.com/yourprofile" target="_blank" class="social-icon">
+                <i class="fab fa-twitter"></i> Twitter
+            </a>
+            <a href="https://instagram.com/yourprofile" target="_blank" class="social-icon">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
         </div>
-    </header>
+        <p>&copy; 2024 ＮＥＯＮＳＨＯＰ. Все права защищены.</p>
+    </footer>
 
-    <head>
+    <script>
+        function showAlert() {
+            alert("Добро пожаловать в ＮＥＯＮＳＨＯＰ!");
+        }
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-        <footer>
-            <div class="social-media">
-                <a href="https://facebook.com/yourprofile" target="_blank" class="social-icon">
-                    <i class="fab fa-facebook-f"></i> Facebook
-                </a>
-                <a href="https://twitter.com/yourprofile" target="_blank" class="social-icon">
-                    <i class="fab fa-twitter"></i> Twitter
-                </a>
-                <a href="https://instagram.com/yourprofile" target="_blank" class="social-icon">
-                    <i class="fab fa-instagram"></i> Instagram
-                </a>
-            </div>
-            <p>&copy; 2024 ＮＥＯＮＳＨＯＰ. Все права защищены.</p>
-        </footer>
-        
-        <script src="scripts.js"></script>
-        
+        function showCategory(category) {
+            alert("Вы выбрали категорию: " + category);
+        }
+    </script>
+</body>
+</html>
